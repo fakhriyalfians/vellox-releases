@@ -18,6 +18,10 @@
 
 ---
 
+[🇬🇧 Read in English](README_EN.md)
+
+---
+
 ## Daftar Isi
 
 - [Apa Itu Vellox?](#-apa-itu-vellox)
