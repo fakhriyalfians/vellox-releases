@@ -90,10 +90,7 @@ Seluruh antarmuka tersedia dalam **Bahasa Indonesia** dan **Bahasa Inggris** den
 ### 1. 📊 Dashboard & Pipeline Produksi
 
 <p align="center">
-  <img src="screenshots/screenshot_1.jpg" alt="Dashboard" width="100%" />
-</p>
-<p align="center">
-  <img src="screenshots/screenshot_18.jpg" alt="Dashboard" width="100%" />
+  <img src="screenshots/dashboard.png" alt="Dashboard" width="100%" />
 </p>
 
 Pusat operasional utama untuk mengelola seluruh alur produksi video Anda.
@@ -113,7 +110,7 @@ Pusat operasional utama untuk mengelola seluruh alur produksi video Anda.
 ### 2. 📈 Analisis Produktivitas
 
 <p align="center">
-  <img src="screenshots/screenshot_2.jpg" alt="Produktivitas" width="100%" />
+  <img src="screenshots/productivity.png" alt="Produktivitas" width="100%" />
 </p>
 
 Pantau performa kerja Anda secara visual dari waktu ke waktu.
@@ -128,7 +125,7 @@ Pantau performa kerja Anda secara visual dari waktu ke waktu.
 ### 3. 📅 Jadwal Mingguan
 
 <p align="center">
-  <img src="screenshots/screenshot_3.jpg" alt="Schedule" width="100%" />
+  <img src="screenshots/schedule.png" alt="Schedule" width="100%" />
 </p>
 
 Tampilan kalender visual untuk merencanakan jadwal upload seluruh channel.
@@ -143,10 +140,7 @@ Tampilan kalender visual untuk merencanakan jadwal upload seluruh channel.
 ### 4. 📺 Manajemen Channel
 
 <p align="center">
-  <img src="screenshots/screenshot_4.jpg" alt="Channels" width="100%" />
-</p>
-<p align="center">
-  <img src="screenshots/screenshot_5.jpg" alt="Dashboard" width="100%" />
+  <img src="screenshots/channels.png" alt="Channels" width="100%" />
 </p>
 
 Kelola seluruh channel YouTube Anda dari satu dashboard terpusat.
@@ -162,10 +156,7 @@ Kelola seluruh channel YouTube Anda dari satu dashboard terpusat.
 ### 5. 📊 YouTube Analytics
 
 <p align="center">
-  <img src="screenshots/screenshot_6.jpg" alt="Analytics" width="100%" />
-</p>
-<p align="center">
-  <img src="screenshots/screenshot_7.jpg" alt="Dashboard" width="100%" />
+  <img src="screenshots/analytics.png" alt="Analytics" width="100%" />
 </p>
 
 Analisis performa mendalam dan insight berbasis AI untuk channel Anda sendiri.
@@ -185,9 +176,8 @@ Analisis performa mendalam dan insight berbasis AI untuk channel Anda sendiri.
 ### 6. 🕵️ Riset Kompetitor
 
 <p align="center">
-  <img src="screenshots/screenshot_8.jpg" alt="Competitor" width="100%" />
+  <img src="screenshots/competitor.png" alt="Competitor" width="100%" />
 </p>
-
 
 Modul intelijen kompetitor paling lengkap di seluruh aplikasi — analisis berbasis data untuk menemukan apa yang berhasil di niche Anda.
 
@@ -211,12 +201,6 @@ Modul intelijen kompetitor paling lengkap di seluruh aplikasi — analisis berba
 ---
 
 ### 7. 📡 Trend Scanner
-<p align="center">
-  <img src="screenshots/screenshot_9.jpg" alt="Dashboard" width="100%" />
-</p>
-<p align="center">
-  <img src="screenshots/screenshot_10.jpg" alt="Dashboard" width="100%" />
-</p>
 
 Modul terbesar dan paling canggih — dashboard analitik video Trending YouTube yang komprehensif.
 
@@ -239,7 +223,7 @@ Modul terbesar dan paling canggih — dashboard analitik video Trending YouTube 
 ### 8. 🤖 AI Tools Suite
 
 <p align="center">
-  <img src="screenshots/screenshot_12.jpg" alt="AI Tools" width="100%" />
+  <img src="screenshots/aitools.png" alt="AI Tools" width="100%" />
 </p>
 
 6 alat AI khusus untuk akselerasi pembuatan konten YouTube, masing-masing dengan system prompt yang direkayasa secara presisi.
@@ -275,7 +259,7 @@ Modul terbesar dan paling canggih — dashboard analitik video Trending YouTube 
 ### 9. 🖼️ Prompt Extractor
 
 <p align="center">
-  <img src="screenshots/screenshot_11.jpg" alt="Prompt Extractor" width="100%" />
+  <img src="screenshots/generator.png" alt="Prompt Extractor" width="100%" />
 </p>
 
 Ekstrak dan generate prompt gambar dari gambar referensi menggunakan Google Gemini AI.
@@ -292,7 +276,7 @@ Ekstrak dan generate prompt gambar dari gambar referensi menggunakan Google Gemi
 ### 10. 📝 Catatan & Notes
 
 <p align="center">
-  <img src="screenshots/screenshot_15.jpg" alt="Notes" width="100%" />
+  <img src="screenshots/notes.png" alt="Notes" width="100%" />
 </p>
 
 Sistem catatan lengkap untuk mengorganisir ide konten dan pengetahuan produksi Anda.
@@ -312,7 +296,7 @@ Sistem catatan lengkap untuk mengorganisir ide konten dan pengetahuan produksi A
 ### 11. 📥 Downloader Video & Audio
 
 <p align="center">
-  <img src="screenshots/screenshot_16.jpg" alt="Downloader" width="100%" />
+  <img src="screenshots/downloader.png" alt="Downloader" width="100%" />
 </p>
 
 Download konten YouTube secara native melalui backend Rust tanpa tools atau website eksternal.
@@ -332,7 +316,7 @@ Download konten YouTube secara native melalui backend Rust tanpa tools atau webs
 ### 12. 🎬 Video Renderer
 
 <p align="center">
-  <img src="screenshots/screenshot_17.jpg" alt="Renderer" width="100%" />
+  <img src="screenshots/renderer.png" alt="Renderer" width="100%" />
 </p>
 
 Pipeline kompilasi dan rendering video yang sepenuhnya customizable, ditenagai oleh FFmpeg dan dikontrol melalui backend Rust.
@@ -444,9 +428,9 @@ Anda perlu menganalisis tren, memantau kompetitor, dan menghasilkan insight berd
 
 | Paket | Harga | Keterangan |
 |-------|-------|------------|
-| **Lisensi Personal** | Rp 200.000 | 1 perangkat, update gratis selamanya |
+| **Lisensi Personal** | Rp 250.000 | 1 perangkat, update gratis selamanya |
 
-> **Catatan**: Anda perlu menyediakan API key sendiri untuk fitur AI (OpenAI, Perplexity, Google Gemini) dan YouTube Data API. Vellox tidak menyediakan API key — ini menjamin privasi dan kontrol penuh atas penggunaan API Anda.
+> **Catatan**: Anda perlu menyediakan API key sendiri untuk fitur AI (OpenAI, Perplexity, Google Gemini /Openrouter) dan YouTube Data API. Vellox tidak menyediakan API key — ini menjamin privasi dan kontrol penuh atas penggunaan API Anda.
 
 ### Apa yang Anda Dapatkan:
 - ✅ Aplikasi desktop Vellox versi terbaru
