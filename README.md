@@ -450,7 +450,7 @@ Anda perlu menganalisis tren, memantau kompetitor, dan menghasilkan insight berd
 |-------|-------|------------|
 | **Lisensi Personal** | Rp 250.000 | 1 perangkat, update gratis selamanya |
 
-> **Catatan**: Anda perlu menyediakan API key sendiri untuk fitur AI (OpenAI, Perplexity, Google Gemini) dan YouTube Data API. Vellox tidak menyediakan API key — ini menjamin privasi dan kontrol penuh atas penggunaan API Anda.
+> **Catatan**: Anda perlu menyediakan API key sendiri untuk fitur AI (OpenAI, Perplexity, Google Gemini / OpenRouter update selanjutnya) dan YouTube Data API. Vellox tidak menyediakan API key — ini menjamin privasi dan kontrol penuh atas penggunaan API Anda.
 
 ### Apa yang Anda Dapatkan:
 - ✅ Aplikasi desktop Vellox versi terbaru
