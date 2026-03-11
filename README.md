@@ -75,7 +75,7 @@ Tidak perlu lagi berpindah antara spreadsheet, browser, ChatGPT, website downloa
 Seluruh data Anda — tugas, catatan, riwayat, pengaturan — tersimpan **hanya di komputer Anda**. Tidak ada server cloud, tidak ada telemetri, tidak ada tracking. API key Anda hanya dikirim langsung ke endpoint resmi (OpenAI/Perplexity/Gemini/YouTube).
 
 ### 3. Performa Desktop Native
-Dibangun dengan **Tauri v2 (Rust)** — bukan Electron. Artinya Vellox menggunakan **memori jauh lebih kecil**, startup lebih cepat, dan tidak membebani sistem Anda. Total bundle JavaScript hanya **~430 KB** (gzipped).
+Dibangun dengan **Tauri v2 (Rust)** — Artinya Vellox menggunakan **memori jauh lebih kecil**, startup lebih cepat, dan tidak membebani sistem Anda. Total bundle JavaScript hanya **~430 KB** (gzipped).
 
 ### 4. Sekali Bayar, Selamanya
 Tidak ada biaya langganan. Beli sekali, gunakan selamanya. Update gratis.
@@ -444,7 +444,7 @@ Anda perlu menganalisis tren, memantau kompetitor, dan menghasilkan insight berd
 
 | Paket | Harga | Keterangan |
 |-------|-------|------------|
-| **Lisensi Personal** | Rp 200.000 | 1 perangkat, update gratis selamanya |
+| **Lisensi Personal** | Rp 250.000 | 1 perangkat, update gratis selamanya |
 
 > **Catatan**: Anda perlu menyediakan API key sendiri untuk fitur AI (OpenAI, Perplexity, Google Gemini) dan YouTube Data API. Vellox tidak menyediakan API key — ini menjamin privasi dan kontrol penuh atas penggunaan API Anda.
 
@@ -483,7 +483,7 @@ A: Vellox memiliki sistem auto-updater bawaan. Saat versi baru tersedia, banner 
 A: Ya. Saat pertama kali membuka Vellox, aplikasi akan otomatis mendownload `ffmpeg`, `ffprobe`, dan `yt-dlp` dari rilis resmi GitHub, lengkap dengan verifikasi SHA-256. Anda tidak perlu menginstall apa pun secara manual.
 
 **Q: Berapa RAM yang dibutuhkan?**
-A: Vellox menggunakan ~80–150 MB RAM dalam penggunaan normal — jauh lebih ringan dibanding aplikasi berbasis Electron yang biasanya memakan 300-500 MB.
+A: Vellox menggunakan ~80–150 MB RAM dalam penggunaan normal 
 
 **Q: Apakah bisa digunakan untuk banyak channel?**
 A: Ya. Anda bisa menambahkan channel tanpa batas, masing-masing dengan jadwal, catatan, dan pengaturan terpisah.
