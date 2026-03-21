@@ -102,7 +102,7 @@ Seluruh antarmuka tersedia dalam **Bahasa Indonesia** dan **Bahasa Inggris** den
 
 Pusat operasional utama untuk mengelola seluruh alur produksi video Anda.
 
-- **Pipeline 7 Tahap**: Lacak setiap video melalui tahapan — *Ide → Scripting → Draft → Generate → Editing → Uploaded → Scheduled*
+- **Pipeline 5 Tahap**: Lacak setiap video melalui tahapan — *Ide → Scripting → Draft → Generate → Editing → Uploaded → Scheduled*
 - **Kartu Prioritas Harian**: Tugas ditampilkan dengan indikator urgensi otomatis:
   - 🔴 **Overdue** — Sudah melewati deadline
   - 🟡 **Hari Ini** — Harus dikerjakan hari ini
@@ -429,7 +429,7 @@ Anda perlu menganalisis tren, memantau kompetitor, dan menghasilkan insight berd
 
 | Fitur | Vellox | TubeBuddy | vidIQ | Notion + ChatGPT |
 |-------|--------|-----------|-------|-------------------|
-| Pipeline produksi video | ✅ 7 tahap | ❌ | ❌ | ⚠️ Manual setup |
+| Pipeline produksi video | ✅ 5 tahap | ❌ | ❌ | ⚠️ Manual setup |
 | Scraping kompetitor tanpa API limit | ✅ | ❌ | ❌ | ❌ |
 | Trend scanner 48 negara | ✅ | ❌ | ⚠️ Terbatas | ❌ |
 | AI tools khusus YouTube | ✅ 6 tools | ⚠️ Terbatas | ⚠️ Terbatas | ⚠️ Prompt manual |
