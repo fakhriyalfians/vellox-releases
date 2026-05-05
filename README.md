@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Satu Aplikasi Desktop. Seluruh Kebutuhan YouTube Creator.</strong><br/>
-  Riset · Analisis · AI · Download · Render — Semua dalam Satu Tempat.
+  Riset · Analisis · AI · Download · Render · Live Stream — Semua dalam Satu Tempat.
 </p>
 <p align="center">
   <a href="https://github.com/fakhriyalfians/vellox-releases/releases/latest">
@@ -40,12 +40,16 @@
   - [Downloader](#11--downloader-video--audio)
   - [Video Renderer](#12--video-renderer)
   - [Prompt Library](#13--prompt-library)
+  - [StreamFlow Control](#14--streamflow-control)
+  - [Quran & Doa Overlay](#15--quran--doa-overlay)
 - [Privasi & Keamanan Data](#-privasi--keamanan-data)
 - [Spesifikasi Teknis](#-spesifikasi-teknis)
 - [Siapa yang Cocok Menggunakan Vellox?](#-siapa-yang-cocok-menggunakan-vellox)
 - [Perbandingan dengan Alternatif Lain](#-perbandingan-dengan-alternatif-lain)
 - [Lisensi & Harga](#-lisensi--harga)
 - [FAQ](#-faq)
+- [Kredit Vellox](#-kredit-vellox)
+- [Kredit StreamFlow](#-kredit-streamflow)
 - [Kontak & Dukungan](#-kontak--dukungan)
 
 ---
@@ -63,9 +67,12 @@ Tidak perlu akun. Tidak perlu langganan bulanan. Tidak perlu koneksi internet un
 | Melacak progress video dari ide sampai upload | ✅ Pipeline 5 tahap + kalender mingguan |
 | Riset dan analisis channel kompetitor | ✅ Scraping mendalam tanpa batas quota API |
 | Mengetahui tren YouTube terkini | ✅ Data trending dari 48 negara + skor viralitas |
+| Mengecek sinyal monetisasi video trending | ✅ Badge monetisasi + scan latar belakang/cache lokal |
 | Membuat judul, deskripsi, dan tag yang optimal | ✅ 6 AI tools khusus YouTube (OpenAI + Perplexity + Gemini) |
 | Download video/audio YouTube | ✅ Downloader built-in hingga 4K |
 | Merender/menggabungkan video | ✅ FFmpeg terintegrasi dengan akselerasi GPU |
+| Mengontrol live stream otomatis | ✅ StreamFlow Control untuk stream, playlist, rotasi, upload, dan runtime VPS |
+| Membuat overlay ayat/doa siap edit | ✅ Quran & Doa Overlay PNG resolusi tinggi dengan mode per ayah/parts/combined |
 | Menyimpan catatan dan prompt AI | ✅ Notes & Prompt Library per-channel |
 
 ---
@@ -86,6 +93,9 @@ Tidak ada biaya langganan. Beli sekali, gunakan selamanya. Update gratis.
 
 ### 5. Bahasa Indonesia Lengkap
 Seluruh antarmuka tersedia dalam **Bahasa Indonesia** dan **Bahasa Inggris** dengan 1.500+ kunci terjemahan. Otomatis mengikuti bahasa sistem operasi Anda.
+
+### 6. Siap untuk Live Stream & Konten Islami
+Selain workflow video reguler, Vellox juga membantu creator yang menjalankan **live stream otomatis** dan konten Islami. StreamFlow Control menghubungkan desktop Vellox ke worker/VPS live stream, sementara Quran & Doa Overlay membuat aset PNG ayat dan doa yang siap dipakai di video atau siaran.
 
 ---
 
@@ -234,6 +244,8 @@ Modul terbesar dan paling canggih — dashboard analitik video Trending YouTube 
 - **Sistem Tier Performa**: Ranking berbasis persentil (Elite, Strong, Average, Below Average, New)
 - **5 Mode Sorting**: Rank, Velocity (V/Day), Views, Newest, dan Virality — dengan toggle naik/turun
 - **Filtering Lanjutan**: Cari berdasarkan judul/channel, filter berdasarkan tanggal upload (Hari Ini, 3 Hari Terakhir, Minggu Ini, Bulan Ini), filter berdasarkan bucket durasi (Pendek, Sedang, Panjang, Sangat Panjang), dan filter berdasarkan tier performa
+- **Deteksi Monetisasi Video**: Cek sinyal publik monetisasi untuk video trending dan tampilkan badge **Monetized** atau **No Signal** langsung di grid/list
+- **Auto Monetization Scan**: Video yang sedang terlihat bisa discan otomatis di latar belakang, dengan cache lokal agar hasil tidak perlu diambil ulang terus-menerus
 - **Modal Perbandingan**: Pilih dan bandingkan hingga 12 video trending secara berdampingan dalam tabel metrik detail
 - **Watchlist**: Simpan video trending yang menarik ke watchlist persistent
 - **Pencarian Tersimpan**: Simpan konfigurasi filter kompleks untuk penggunaan ulang sekali klik
@@ -364,6 +376,9 @@ Pipeline kompilasi dan rendering video yang sepenuhnya customizable, ditenagai o
 ---
 
 ### 13. 🔒 Prompt Library
+<p align="center">
+  <img src="screenshots/screenshot_19.jpg" alt="Renderer" width="100%" />
+</p>
 
 Simpan dan organisir prompt AI paling sukses Anda untuk penggunaan ulang cepat.
 
@@ -375,16 +390,53 @@ Simpan dan organisir prompt AI paling sukses Anda untuk penggunaan ulang cepat.
 
 ---
 
+### 14. 📺 StreamFlow Control
+<p align="center">
+  <img src="screenshots/screenshot_20.jpg" alt="Renderer" width="100%" />
+</p>
+
+Kontrol native untuk **Vellox Live Worker / StreamFlow** langsung dari desktop Vellox. Cocok untuk creator yang menjalankan live stream 24/7, rotasi video, atau channel automation di VPS/server sendiri.
+
+- **Manajemen Instance StreamFlow**: Simpan beberapa URL instance, uji koneksi, kelola autentikasi session cookie, dan pindah worker tanpa setup ulang
+- **Dashboard Runtime**: Pantau statistik sistem, status proses, disk usage, server time, active stream, service health, dan live refresh
+- **Create/Edit Stream**: Buat stream RTMP atau YouTube dengan judul, deskripsi, tag, privacy, thumbnail, jadwal mulai/selesai, bitrate, FPS, resolusi, loop video, dan toggle monetisasi YouTube
+- **Stream Runtime Control**: Start, pause, stop, duplicate, edit, delete, cek stream key, buka log per-stream, dan lihat detail runtime dari satu panel
+- **Media Library**: Kelola video/audio worker, folder, preview URL, rename, delete, pindah folder, upload video/audio, dan chunk upload yang bisa dipause/resume/cancel
+- **Cloud Import Jobs**: Import media dari Google Drive, MediaFire, Dropbox, dan Mega dengan status job, cancel, retry, serta cleanup
+- **Playlist & Rotation**: Susun playlist video/audio, reorder item, buat rotasi otomatis, dan jalankan aksi activate/pause/stop untuk rotasi stream
+- **Automation Settings**: Kontrol adaptive duration, adaptive metadata/retitle, AI settings, channel prompt, compliance prompt, reCAPTCHA, dan Telegram notification jobs
+- **Admin & Observability**: Kelola user, lihat video/stream per-user, pantau history, logs, donator data, runtime status, dan error terakhir worker
+
+---
+
+### 15. 🕌 Quran & Doa Overlay
+<p align="center">
+  <img src="screenshots/screenshot_21.jpg" alt="Renderer" width="100%" />
+</p>
+
+Workspace khusus untuk membuat aset visual ayat Al-Quran dan doa, siap dipakai sebagai overlay video, Shorts, Reels, atau live stream.
+
+- **Browser Al-Quran & Doa Offline**: Jelajahi daftar surah, pilih ayat, cari doa berdasarkan grup/nama, dan gunakan data lokal tanpa perlu koneksi internet
+- **Seleksi Ayat Fleksibel**: Pilih satu ayat, beberapa ayat, atau gabungan ayat; tampilkan/sembunyikan nomor ayat, latin, dan terjemahan
+- **Terjemahan ID/EN**: Dukungan teks Arab, latin, terjemahan Indonesia, dan terjemahan Inggris bila tersedia
+- **Export PNG Resolusi Tinggi**: Buat overlay mode **per ayah**, **parts**, atau **combined**, lalu export satu PNG atau batch ZIP
+- **Canvas Ratio & Theme**: Pilih rasio 16:9, 9:16, 1:1, tema gelap/terang, serta background transparan putih/hitam untuk compositing video
+- **Drag Positioning**: Geser layer teks langsung di preview canvas, reset posisi, dan atur layout sebelum export
+- **Text Appearance Editor**: Atur warna, font, ukuran, teks Arab/latin/terjemahan, footer kiri/kanan, dan pecah konten panjang menjadi beberapa parts
+- **Copy Cepat**: Salin teks Arab, latin, dan terjemahan untuk caption, deskripsi, atau prompt AI
+
+---
+
 ## 🔐 Privasi & Keamanan Data
 
-Vellox adalah aplikasi **local-first**. Data Anda **tidak pernah meninggalkan komputer Anda**.
+Vellox adalah aplikasi **local-first**. Data inti Anda tersimpan lokal; koneksi keluar hanya terjadi saat Anda memakai fitur online yang memang membutuhkan API, scraping, download, atau worker/VPS seperti StreamFlow Control.
 
 | Prinsip | Detail |
 |---------|--------|
 | **Tanpa database cloud** | Semua data — tugas, catatan, prompt, pengaturan — tersimpan di localStorage/JSON di komputer Anda |
 | **Tanpa telemetri** | Nol tracking, nol pengumpulan analitik, nol ping ke server eksternal |
 | **Tanpa akun pengguna** | Tidak ada registrasi, tidak ada login, tidak ada cloud sync — buka aplikasi dan langsung bekerja |
-| **Keamanan API key** | Key disimpan lokal dan hanya dikirim langsung ke endpoint API resmi (OpenAI, Perplexity, Google Gemini, YouTube Data API) |
+| **Keamanan API key & worker** | Key disimpan lokal dan hanya dikirim langsung ke endpoint API resmi (OpenAI, Perplexity, Google Gemini, YouTube Data API) atau instance StreamFlow yang Anda konfigurasi sendiri |
 | **Sistem auto-backup** | Backup otomatis saat startup, setiap 2 jam, dan saat aplikasi ditutup — dengan one-click restore |
 | **Integrity checking** | Verifikasi hash SHA-256 untuk binary yang didownload (ffmpeg, yt-dlp) |
 
@@ -402,9 +454,9 @@ Vellox adalah aplikasi **local-first**. Data Anda **tidak pernah meninggalkan ko
 | **Bahasa** | Indonesia 🇮🇩 & English 🇺🇸 (1.500+ kunci terjemahan) |
 | **AI Provider** | OpenAI (GPT-4o-mini), Perplexity (Sonar), Google Gemini (2.5 Flash) |
 | **Binary Tools** | FFmpeg, FFprobe, yt-dlp (auto-download saat pertama kali) |
-| **IPC Commands** | 32 perintah Rust di 7 modul |
-| **Views** | 14 halaman lazy-loaded (code-split) |
-| **Komponen** | 46+ komponen UI yang reusable |
+| **IPC Commands** | 150+ perintah Rust/IPC, termasuk 100+ command StreamFlow |
+| **Views** | 16 halaman lazy-loaded (code-split) |
+| **Komponen** | 59+ komponen UI yang reusable |
 | **Desain** | Hyper-Minimalist OLED dark aesthetic dengan glassmorphic panels |
 
 ---
@@ -433,8 +485,11 @@ Anda perlu menganalisis tren, memantau kompetitor, dan menghasilkan insight berd
 | Scraping kompetitor tanpa API limit | ✅ | ❌ | ❌ | ❌ |
 | Trend scanner 48 negara | ✅ | ❌ | ⚠️ Terbatas | ❌ |
 | AI tools khusus YouTube | ✅ 6 tools | ⚠️ Terbatas | ⚠️ Terbatas | ⚠️ Prompt manual |
+| Deteksi sinyal monetisasi video trending | ✅ | ❌ | ❌ | ❌ |
 | Download video/audio built-in | ✅ Hingga 4K | ❌ | ❌ | ❌ |
 | Video renderer terintegrasi | ✅ GPU-accelerated | ❌ | ❌ | ❌ |
+| Kontrol StreamFlow/VPS live stream | ✅ | ❌ | ❌ | ❌ |
+| Quran & Doa overlay PNG | ✅ | ❌ | ❌ | ❌ |
 | 100% offline & privat | ✅ | ❌ Browser ext. | ❌ Browser ext. | ❌ Cloud-based |
 | Sekali bayar | ✅ | ❌ Langganan | ❌ Langganan | ❌ Langganan |
 | Desktop native (bukan Electron) | ✅ Tauri/Rust | ❌ | ❌ | ❌ |
@@ -451,6 +506,8 @@ Anda perlu menganalisis tren, memantau kompetitor, dan menghasilkan insight berd
 | **Lisensi Personal** | Rp 250.000 | 1 perangkat, update gratis selamanya |
 
 > **Catatan**: Anda perlu menyediakan API key sendiri untuk fitur AI (OpenAI, Perplexity, Google Gemini / OpenRouter update selanjutnya) dan YouTube Data API. Vellox tidak menyediakan API key — ini menjamin privasi dan kontrol penuh atas penggunaan API Anda.
+
+> **Catatan StreamFlow**: Untuk StreamFlow Control, Anda perlu menjalankan instance Vellox Live Worker / StreamFlow di VPS atau server sendiri, lalu menghubungkannya ke Vellox desktop.
 
 ### Apa yang Anda Dapatkan:
 - ✅ Aplikasi desktop Vellox versi terbaru
@@ -469,7 +526,7 @@ Anda perlu menganalisis tren, memantau kompetitor, dan menghasilkan insight berd
 ## ❓ FAQ
 
 **Q: Apakah saya perlu koneksi internet untuk menggunakan Vellox?**
-A: Tidak untuk fitur inti (pipeline, catatan, prompt library, renderer). Koneksi internet hanya diperlukan untuk fitur yang memang membutuhkan data online: AI tools (mengakses API OpenAI/Perplexity/Gemini), Trend Scanner (mengakses YouTube Data API), Riset Kompetitor (scraping YouTube), dan Downloader (download video).
+A: Tidak untuk fitur inti (pipeline, catatan, prompt library, renderer, Quran & Doa Overlay). Koneksi internet hanya diperlukan untuk fitur yang memang membutuhkan data online: AI tools (mengakses API OpenAI/Perplexity/Gemini), Trend Scanner (mengakses YouTube Data API), Riset Kompetitor (scraping YouTube), Downloader (download video), dan StreamFlow Control (koneksi ke worker/VPS).
 
 **Q: Apakah Vellox aman untuk data saya?**
 A: Ya. Seluruh data disimpan di komputer Anda (localStorage). Tidak ada server cloud, tidak ada telemetri, tidak ada akun. API key Anda hanya dikirim ke endpoint resmi masing-masing provider.
@@ -491,6 +548,39 @@ A: Vellox menggunakan ~80–150 MB RAM dalam penggunaan normal
 
 **Q: Apakah bisa digunakan untuk banyak channel?**
 A: Ya. Anda bisa menambahkan channel tanpa batas, masing-masing dengan jadwal, catatan, dan pengaturan terpisah.
+
+**Q: Apakah StreamFlow Control sudah termasuk server/worker?**
+A: Vellox desktop berfungsi sebagai panel kontrol. Untuk menjalankan live stream otomatis, Anda perlu menyiapkan instance Vellox Live Worker / StreamFlow di VPS atau server sendiri, lalu menyimpan URL instance tersebut di Vellox.
+
+**Q: Apakah Quran & Doa Overlay bisa dipakai tanpa internet?**
+A: Ya. Browser Quran/doa dan generator overlay menggunakan data lokal. Anda bisa membuat PNG atau ZIP overlay tanpa koneksi internet.
+
+---
+
+## 🏷️ Kredit Vellox
+
+**Vellox** adalah aplikasi desktop proprietary yang dikembangkan oleh **Fakhriyalfians / Vellox** untuk workflow YouTube creator, riset konten, AI tools, downloader, renderer, StreamFlow Control, dan Quran & Doa Overlay.
+
+- **Produk**: Vellox Desktop
+- **Developer**: Fakhriyalfians
+- **Copyright**: Copyright (c) 2026 Vellox. All Rights Reserved.
+- **Model distribusi**: Software komersial closed-source dengan lisensi lifetime
+- **Rilis resmi**: [github.com/fakhriyalfians/vellox-releases](https://github.com/fakhriyalfians/vellox-releases)
+
+Seluruh branding, desain aplikasi, workflow desktop, integrasi creator tools, dan fitur proprietary Vellox tetap menjadi hak Vellox, kecuali komponen open-source pihak ketiga yang memiliki lisensi masing-masing.
+
+---
+
+## 🙏 Kredit StreamFlow
+
+Fitur **StreamFlow Control** di Vellox terintegrasi dengan **Vellox Live Worker**, fork yang berasal dari proyek open-source **StreamFlow** oleh Bang Tutorial.
+
+- **Upstream StreamFlow**: [github.com/bangtutorial/streamflow](https://github.com/bangtutorial/streamflow)
+- **Vellox Live Worker**: [github.com/fakhriyalfians/vellox-live-worker](https://github.com/fakhriyalfians/vellox-live-worker)
+- **Lisensi upstream**: MIT License
+- **Kredit**: StreamFlow by Bang Tutorial; integrasi desktop dan modifikasi worker oleh Vellox
+
+Nama StreamFlow digunakan sebagai kredit dan identifikasi asal proyek upstream. Vellox Live Worker tidak berafiliasi, disponsori, atau di-endorse secara resmi oleh Bang Tutorial.
 
 ---
 

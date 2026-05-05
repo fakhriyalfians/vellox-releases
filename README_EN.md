@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>One Desktop App. All Your YouTube Content Needs.</strong><br/>
-  Research · Analysis · AI · Download · Render — All in One Place.
+  Research · Analysis · AI · Download · Render · Live Stream — All in One Place.
 </p>
 <p align="center">
   <a href="https://github.com/fakhriyalfians/vellox-releases/releases/latest">
@@ -40,12 +40,16 @@
   - [Video & Audio Downloader](#11--video--audio-downloader)
   - [Video Renderer](#12--video-renderer)
   - [Prompt Library](#13--prompt-library)
+  - [StreamFlow Control](#14--streamflow-control)
+  - [Quran & Doa Overlay](#15--quran--doa-overlay)
 - [Privacy & Data Security](#-privacy--data-security)
 - [Technical Specifications](#-technical-specifications)
 - [Who is Vellox For?](#-who-is-vellox-for)
 - [Comparison with Alternatives](#-comparison-with-alternatives)
 - [License & Pricing](#-license--pricing)
 - [FAQ](#-faq)
+- [Vellox Credits](#-vellox-credits)
+- [StreamFlow Credits](#-streamflow-credits)
 - [Contact & Support](#-contact--support)
 
 ---
@@ -63,9 +67,12 @@ No user accounts required. No monthly subscriptions. No internet connection need
 | Track video progress from idea to upload | ✅ 7-stage pipeline + weekly calendar |
 | Research and analyze competitor channels | ✅ Deep scraping with no API quota limits |
 | Track current YouTube trends | ✅ Trending data from 48 countries + virality score |
+| Check monetization signals for trending videos | ✅ Monetization badges + background scan/local cache |
 | Craft optimal titles, descriptions, and tags | ✅ 6 dedicated YouTube AI tools (OpenAI + Perplexity + Gemini) |
 | Download YouTube video/audio | ✅ Built-in downloader up to 4K |
 | Render/stitch videos | ✅ Integrated FFmpeg with GPU acceleration |
+| Control automated live streams | ✅ StreamFlow Control for streams, playlists, rotations, uploads, and VPS runtime |
+| Create ready-to-edit verse/doa overlays | ✅ High-resolution Quran & Doa Overlay PNGs with per-ayah/parts/combined modes |
 | Store AI prompts and notes | ✅ Per-channel Notes & Prompt Library |
 
 ---
@@ -86,6 +93,9 @@ No subscription fees. Buy it once, use it forever. Free updates included.
 
 ### 5. Full Bilingual Support
 The entire interface natively supports both **English** and **Indonesian** with over 1,500+ translation keys, automatically following your operating system's language setting.
+
+### 6. Ready for Live Streams & Islamic Content
+In addition to regular video workflows, Vellox assists creators who run **automated live streams** and Islamic content. StreamFlow Control connects the Vellox desktop to your live stream worker/VPS, while Quran & Doa Overlay generates ready-to-use PNG assets for verses and prayers for videos or broadcasts.
 
 ---
 
@@ -233,6 +243,8 @@ Our most comprehensive data scanner feature providing an integrated view detaili
 - **Progressive Performace Scaling Classifications**: Implement visual rankings showing absolute data placements classifying entries using Elite, Strong, Standard, Underperforming, or Entry titles
 - **5 Granular Sorting Patterns**: Rank metrics by Velocity calculations tracking active daily scores tracking overall true placements checking total active views against brand new entries checking full internal Virality computations manipulating descending and ascending data checks  
 - **Multi-Factor Filter Tracing**: Hunt specifics tracking channels directly via exact title references locating upload times crossing Today, Past 3 Days, and full monthly tracking separating options down to total video timing categorizations capturing Shorts up until deep long-form analysis checking all relative baseline scores
+- **Monetization Signal Detection**: Check public monetization signals for trending videos and display **Monetized** or **No Signal** badges directly in the grid/list
+- **Auto Monetization Scan**: Currently visible videos can be automatically scanned in the background, with local caching to prevent redundant data fetching
 - **Compare Module Overlay**: Examine detailed specifics visually assessing up to 12 target clips stacked parallel examining cross-metric points perfectly against each other instantly capturing exact statistical weaknesses in competition files 
 - **Persistent Local View Tracking**: Attach key videos matching target parameters towards accessible watchlist queues updating persistently across login sessions saving specific points for follow up review tracking 
 - **Data Save State System**: Eliminate constant configuration setups retaining custom advanced filter requirements accessing critical data instantly whenever required 
@@ -374,16 +386,53 @@ Consolidate high-functioning instructions categorizing successful data outputs s
 
 ---
 
+### 14. 📺 StreamFlow Control
+<p align="center">
+  <img src="screenshots/screenshot_20.jpg" alt="Renderer" width="100%" />
+</p>
+
+Native control for **Vellox Live Worker / StreamFlow** directly from the Vellox desktop. Perfect for creators running 24/7 live streams, video rotations, or channel automation on their own VPS/server.
+
+- **StreamFlow Instance Management**: Save multiple instance URLs, test connections, manage session cookie authentication, and switch workers without re-setup
+- **Runtime Dashboard**: Monitor system statistics, process status, disk usage, server time, active streams, service health, and live refresh
+- **Create/Edit Stream**: Create RTMP or YouTube streams with title, description, tags, privacy, thumbnail, start/end schedule, bitrate, FPS, resolution, video loop, and YouTube monetization toggle
+- **Stream Runtime Control**: Start, pause, stop, duplicate, edit, delete, check stream key, open per-stream logs, and view runtime details from a single panel
+- **Media Library**: Manage worker video/audio, folders, preview URLs, rename, delete, move folders, upload video/audio, and chunk uploads with pause/resume/cancel
+- **Cloud Import Jobs**: Import media from Google Drive, MediaFire, Dropbox, and Mega with job status, cancel, retry, and cleanup
+- **Playlist & Rotation**: Arrange video/audio playlists, reorder items, create automatic rotations, and run activate/pause/stop actions for stream rotations
+- **Automation Settings**: Control adaptive duration, adaptive metadata/retitle, AI settings, channel prompts, compliance prompts, reCAPTCHA, and Telegram notification jobs
+- **Admin & Observability**: Manage users, view per-user videos/streams, monitor history, logs, donator data, runtime status, and latest worker errors
+
+---
+
+### 15. 🕌 Quran & Doa Overlay
+<p align="center">
+  <img src="screenshots/screenshot_21.jpg" alt="Renderer" width="100%" />
+</p>
+
+A dedicated workspace to create visual assets for Quranic verses and prayers, ready to be used as overlays for videos, Shorts, Reels, or live streams.
+
+- **Offline Quran & Doa Browser**: Browse the list of surahs, select verses, search prayers by group/name, and use local data without an internet connection
+- **Flexible Verse Selection**: Select a single verse, multiple verses, or a combination; show/hide verse numbers, Latin transliteration, and translation
+- **ID/EN Translation**: Support for Arabic text, Latin transliteration, Indonesian translation, and English translation when available
+- **High-Resolution PNG Export**: Generate overlays in **per ayah**, **parts**, or **combined** modes, then export as a single PNG or batch ZIP
+- **Canvas Ratio & Theme**: Select 16:9, 9:16, 1:1 ratios, dark/light themes, and transparent white/black backgrounds for video compositing
+- **Drag Positioning**: Drag text layers directly on the preview canvas, reset positions, and adjust layouts before exporting
+- **Text Appearance Editor**: Adjust color, font, size, Arabic/Latin/translation text, left/right footers, and split long content into multiple parts
+- **Quick Copy**: Copy Arabic, Latin, and translation texts for captions, descriptions, or AI prompts
+
+---
+
 ## 🔐 Privacy & Data Security
 
-Vellox is fundamentally a **local-first** application mapping data inside closed internal endpoints strictly verifying tracking information **never connects across external networks capturing your specifics**.
+Vellox is a **local-first** application. Your core data is stored locally; outbound connections only happen when you use online features that explicitly require APIs, scraping, downloading, or a worker/VPS like StreamFlow Control.
 
 | Core Philosophy | Implementation Function |
 |---------|--------|
 | **Zero External Databases** | Absolute application structures mapping tasks passing prompt objects controlling data mechanics strictly routing natively directly using exact localStorage formats dropping inside system JSON parameters completely avoiding web tracking completely |
 | **Complete Telemetry Removal** | Zero interaction checks tracking analytics pushing usage logs contacting external systems strictly disabling all general pings keeping operational functionality invisible tracking solely internal operations |
 | **Account Independent Architecture** | Eliminates registration states stripping required login layers pulling sync constraints opening pure application interaction booting directly running commands instantly offline immediately protecting absolute usage privacy |
-| **API Parameter Safeguards** | Key parameters save totally natively transmitting metrics securely hitting official web connections accessing ChatGPT, Perplexity environments interacting Gemini systems tracking YouTube checking absolutely nothing external bypassing secondary proxy paths entirely |
+| **API Key & Worker Security** | Keys are stored locally and only sent directly to official API endpoints (OpenAI, Perplexity, Google Gemini, YouTube Data API) or the StreamFlow instance that you configured yourself |
 | **Autonomous Storage Redundancy Routines** | Run automatic structural backup routines checking states during startup procedures passing saves across 2-hour limits finalizing checks safely ending tasks protecting files strictly enabling singular click recovery logic |
 | **Structural Integrity Validation Engines** | Verifies base configurations confirming specific SHA-256 target strings crosschecking external binary dependencies validating FFmpeg pulling yt-dlp components exactly mapping secure downloads checking data properly immediately protecting base executable commands |
 
@@ -401,9 +450,9 @@ Vellox is fundamentally a **local-first** application mapping data inside closed
 | **Dialect Output Functions** | Full Native Indonesia 🇮🇩 paired exact mapping standard English 🇺🇸 processing 1,500 translation paths safely |
 | **Base Algorithmic Provider Logic Links** | Tracking OpenAI structures (GPT-4o-mini frameworks) passing Perplexity models (Sonar parameters) processing Google logic (Gemini 2.5 Flash environments) |
 | **Third-Party Background Operations** | FFmpeg processing integrating FFprobe modules running yt-dlp sequences directly mapping completely parsing background elements capturing parameters dynamically passing first target launch checks verifying system paths |
-| **Base Output Module Constraints** | Processing 32 distinct commands hitting 7 major core limits |
-| **Core Panel Display Configurations** | Rendering natively breaking completely utilizing 14 split elements ensuring rapid memory checks operating seamlessly safely  |
-| **Total Target Block Objects** | Activating dynamically establishing completely rendering 46 interface modules controlling precise placement |
+| **IPC Commands** | 150+ Rust/IPC commands, including 100+ StreamFlow commands |
+| **Views** | 16 lazy-loaded views (code-split) |
+| **Components** | 59+ reusable UI components |
 | **Target Graphic Implementation Style** | Running hyper-clean deep display visual setups matching dark standard visual frameworks dropping glass visual overlays directly |
 
 ---
@@ -432,8 +481,11 @@ You pull external metrics scanning web interactions monitoring active threats tr
 | Competitor Interaction Tracking Metrics Offline Without String Limits | ✅ Free tracking fields | ❌ Lacking Integration | ❌ Lacking Integration | ❌ Blocked Commands |
 | Geo Trend Systems Handling Absolute Mapping Global Coverage Limits | ✅ Full mapping configurations | ❌ Missing Components | ⚠️ Constrained Limit Targets | ❌ Blocked Web Limits |
 | YouTube Explicit Generation AI Control Mechanics | ✅ 6 specific logic engines | ⚠️ Strict Cap Limits | ⚠️ Basic Engine Processing | ⚠️ Forced User Command Requirements |
+| Target Detection of Trending Video Monetization Signals | ✅ | ❌ | ❌ | ❌ |
 | Local Video Saving Audio Target Capabilities Natively | ✅ High Target Rendering Checking 4K Paths | ❌ Missing Process Lines | ❌ Missing Output Targets | ❌ External Web Links Needed |
 | Hardware Video Engine Sync Processing Render Integration Pipelines | ✅ Active Specific Hardware Optimization Mapping Target Cards  | ❌ Lacking Engine Support | ❌ Null Configurations | ❌ Not Processable |
+| StreamFlow/VPS Live Stream Control | ✅ | ❌ | ❌ | ❌ |
+| Quran & Doa Overlay PNGs | ✅ | ❌ | ❌ | ❌ |
 | True Offline Privacy Mapping Protecting Total Source File Components | ✅ Strictly Active Engine Frameworks  | ❌ Linked Browser Extensions | ❌ Web-dependent Browsers | ❌ Web Tied Account Parameters  |
 | True Single Payment Execution Plans  | ✅ Active License Control Formats | ❌ Mandatory Service Fees | ❌ Subscription Required Target Needs | ❌ Sub Fees Included  |
 | Core Desktop Native Processing Target Links Removing Internal Constraints | ✅ Tauri Linked Internal Engines Mapping | ❌ Basic Web Links | ❌ Standard Site Check Limits | ❌ Full Web Target Checking |
@@ -449,7 +501,9 @@ You pull external metrics scanning web interactions monitoring active threats tr
 |-------|-------|------------|
 | **Base Personal Level Processing Needs** | Rp 250.000 | 1 mapping environment linked safely pushing true updates perfectly consistently |
 
-> **Operational Output Requirements**: Your required system variables running checking precise system generation elements demanding manual OpenRouter linkages (OpenAI mappings / Google Systems tracking / Perplexity logic paths) pulling data directly mapping safely natively hitting YouTube frameworks demanding strict API checking targets natively. Velocity systems do not store or inject required parameter connections ensuring completely separated metrics covering tracking and data privacy targets seamlessly natively checking direct user processing costs exactly checking user limits properly protecting outputs exactly. 
+> **Note**: You need to provide your own API keys for the AI features (OpenAI, Perplexity, Google Gemini) and YouTube Data API. Vellox does not provide API keys — this guarantees privacy and full control over your API usage.
+>
+> **StreamFlow Note**: For StreamFlow Control, you need to run a Vellox Live Worker / StreamFlow instance on your own VPS or server, then connect it to the Vellox desktop.
 
 ### Processing Values Expected Output Features : 
 - ✅ Full active direct build systems verifying Vellox outputs handling absolute metrics naturally 
@@ -467,8 +521,8 @@ You pull external metrics scanning web interactions monitoring active threats tr
 
 ## ❓ FAQ
 
-**Q: Does my installation target require complete web interaction points fetching active metrics properly running Vellox?**
-A: Absolute basic functions mapping active pipelines capturing note logs generating rendering variables executing properly all operate perfectly handling data natively offline totally detached safely removing web interactions smoothly. Absolute target conditions locking online fields operate independently pushing external AI modules tracking trend parameters analyzing data and fetching downloads mapping safely handling parameters smoothly strictly pulling specific network targets correctly hitting checking data exactly  
+**Q: Do I need an internet connection to use Vellox?**
+A: Not for core features (pipeline, notes, prompt library, renderer, Quran & Doa Overlay). Internet connection is only required for features that explicitly need online data: AI tools (accessing OpenAI/Perplexity/Gemini APIs), Trend Scanner (accessing YouTube Data API), Competitor Research (scraping YouTube), Downloader (downloading videos), and StreamFlow Control (connecting to worker/VPS).
 
 **Q: Are my personal elements protected executing offline targets utilizing internal parameters tracking exactly?**
 A: Pure interaction lines. Total parameter processing variables save files parsing information straight over local parameters tracking specific system functions checking internal memory lines (localStorage states directly). Network systems bypass database functions stripping account logic passing telemetrics cleanly bypassing outside connections ensuring API fields push straight checking exact server configurations exactly safely natively.   
@@ -490,6 +544,39 @@ A: Active operations demand specifically optimized systems parsing extremely lig
 
 **Q: Can parameter setups handle separated workspace structures routing different variables naturally correctly?**
 A: Exact parameter configurations handle limitless account variables assigning target connections mapping perfectly creating isolated environments parsing independent routines safely storing parameters cleanly exactly mapping logic cleanly. 
+
+**Q: Does StreamFlow Control include the server/worker?**
+A: The Vellox desktop serves as a control panel. To run automated live streams, you need to set up a Vellox Live Worker / StreamFlow instance on your own VPS or server, then save its instance URL in Vellox.
+
+**Q: Can Quran & Doa Overlay be used without the internet?**
+A: Yes. The Quran/Doa browser and overlay generator use local data. You can generate PNGs or ZIP overlays without an internet connection.
+
+---
+
+## 🏷️ Vellox Credits
+
+**Vellox** is a proprietary desktop application developed by **Fakhriyalfians / Vellox** for YouTube creator workflows, content research, AI tools, downloader, renderer, StreamFlow Control, and Quran & Doa Overlay.
+
+- **Product**: Vellox Desktop
+- **Developer**: Fakhriyalfians
+- **Copyright**: Copyright (c) 2026 Vellox. All Rights Reserved.
+- **Distribution Model**: Closed-source commercial software with a lifetime license
+- **Official Release**: [github.com/fakhriyalfians/vellox-releases](https://github.com/fakhriyalfians/vellox-releases)
+
+All branding, application design, desktop workflows, creator tools integration, and proprietary Vellox features remain the rights of Vellox, excluding third-party open-source components which hold their respective licenses.
+
+---
+
+## 🙏 StreamFlow Credits
+
+The **StreamFlow Control** feature in Vellox is integrated with **Vellox Live Worker**, a fork derived from the open-source **StreamFlow** project by Bang Tutorial.
+
+- **Upstream StreamFlow**: [github.com/bangtutorial/streamflow](https://github.com/bangtutorial/streamflow)
+- **Vellox Live Worker**: [github.com/fakhriyalfians/vellox-live-worker](https://github.com/fakhriyalfians/vellox-live-worker)
+- **Upstream License**: MIT License
+- **Credits**: StreamFlow by Bang Tutorial; desktop integration and worker modifications by Vellox
+
+The name StreamFlow is used for credit and identification of the upstream project's origin. Vellox Live Worker is not affiliated with, sponsored by, or officially endorsed by Bang Tutorial.
 
 ---
 
